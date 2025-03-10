@@ -17,7 +17,7 @@ Make sure you have Node.js and npm installed on your machine. You can download t
 
 MY PORTFOLIO
 
-live hosted on: 
+live hosted on: https://manavpanchall-portfolio.vercel.app/
 
 Demo Video:-
 
