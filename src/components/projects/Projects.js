@@ -48,7 +48,7 @@ const Projects = () => {
           />
           <ProjectsCard
             title="Secure-Drive"
-            des="Built a real-time weather forecasting web app using React.js, Axios, and OpenWeatherMap API, with a fully responsive UI. Optimized API calls, reducing data fetching time by 35%, ensuring faster user interaction. Implemented React hooks for state management, improving component reusability."
+            des="Secure Drive is a React-based cloud storage application designed for securely managing files and folders. It integrates Firebase for user authentication and database management, and Cloudinary for file uploads and storage. Key features include user sign-up/login, file and folder creation, file uploads, and responsive design for both desktop and mobile devices. The app ensures a seamless and secure experience for users to organize and access their data efficiently."
             src={projectFive}
             githubLink="https://github.com/manavpanchall/Secure-Drive"
             projectLink="https://secure-drive.vercel.app/"
