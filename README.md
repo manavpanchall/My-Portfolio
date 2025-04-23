@@ -91,5 +91,8 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 
 
+<<<<<<< HEAD
 
 Manav Panchal
+=======
+>>>>>>> dff43b017f9f7c9ffe0babf939bb265b42f586ce
