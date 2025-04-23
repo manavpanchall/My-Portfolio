@@ -1,5 +1,8 @@
 # Manav Panchal's Personal Portfolio
 
+Manav Panchal
+
+
 This project is a personal portfolio website for showcasing the work and skills of Manav Panchal. It is built using React.js and styled with Tailwind CSS.
 
 ## Table of Contents
@@ -17,12 +20,7 @@ Make sure you have Node.js and npm installed on your machine. You can download t
 
 MY PORTFOLIO
 
-live hosted on: 
-
-Demo Video:-
-
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+live hosted on: https://manavpanchall-portfolio.vercel.app/
 
 ## Available Scripts
 
@@ -91,3 +89,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
+
+
+
+Manav Panchal

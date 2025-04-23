@@ -1,6 +1,6 @@
 import React from 'react';
 import Title from '../layouts/Title';
-import { projectOne, projectTwo, projectThree, projectFour, UIOne, UITwo, UIThree, UIFour } from "../../assets/index";
+import { projectOne, projectTwo, projectThree, projectFour, projectFive, UIOne, UITwo, UIThree, UIFour } from "../../assets/index";
 import ProjectsCard from './ProjectsCard';
 
 const Projects = () => {
@@ -17,8 +17,9 @@ const Projects = () => {
           />
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 xl:gap-14">
+          
           <ProjectsCard
-            title="SOCIAL MEDIA CLONE"
+            title="Weather App"
             des="Built a real-time weather forecasting web app using React.js, Axios, and OpenWeatherMap API, with a fully responsive UI. Optimized API calls, reducing data fetching time by 35%, ensuring faster user interaction. Implemented React hooks for state management, improving component reusability."
             src={projectOne}
             githubLink="https://github.com/manavpanchall/Weather-App-India"
@@ -44,6 +45,13 @@ const Projects = () => {
             src={projectFour}
             githubLink="https://github.com/manavpanchall/Frontend_PU_CODE_HACKATHON"
             projectLink="https://frontend-pu-code-hackathon.vercel.app/"
+          />
+          <ProjectsCard
+            title="Secure-Drive"
+            des="Built a real-time weather forecasting web app using React.js, Axios, and OpenWeatherMap API, with a fully responsive UI. Optimized API calls, reducing data fetching time by 35%, ensuring faster user interaction. Implemented React hooks for state management, improving component reusability."
+            src={projectFive}
+            githubLink="https://github.com/manavpanchall/Secure-Drive"
+            projectLink="https://secure-drive.vercel.app/"
           />
         </div>
       </section>
