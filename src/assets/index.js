@@ -5,6 +5,7 @@ import projectTwo from "./images/projects/projectTwo.png";
 import projectThree from "./images/projects/projectThree.png";
 import projectFour from "./images/projects/projectFour.png";
 import projectFive from "./images/projects/projectFive.png";
+import projectSix from "./images/projects/projectSix.png";
 import UIOne from "./images/projects/UIOne.png";
 import UITwo from "./images/projects/UITwo.png";
 import UIThree from "./images/projects/UIThree.png";
@@ -22,6 +23,7 @@ export {
   projectThree,
   projectFour,
   projectFive,
+  projectSix,
   UIOne,
   UITwo,
   UIThree,
