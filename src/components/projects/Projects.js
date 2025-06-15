@@ -16,6 +16,8 @@ const Projects = () => {
             des="My Projects"
           />
         </div>
+
+        
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 xl:gap-14">
           <ProjectsCard
             title="Gas Agency Management System"
@@ -61,6 +63,9 @@ const Projects = () => {
           />
         </div>
       </section>
+
+
+
 
       <section
         id="uiux-projects"
