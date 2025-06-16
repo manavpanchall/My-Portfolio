@@ -7,6 +7,7 @@ import {
 } from "react-icons/fa";
 import { Link } from "react-scroll";
 
+
 const Footer = () => {
   return (
     <div className="w-full py-20 h-auto border-b-[1px] border-b-black grid grid-cols-1 md:grid-cols-2 lgl:grid-cols-3 gap-8">
