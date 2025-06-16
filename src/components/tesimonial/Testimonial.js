@@ -5,6 +5,7 @@ import { HiArrowRight, HiArrowLeft } from "react-icons/hi";
 import Title from '../layouts/Title';
 import { testimonialOne, quote } from "../../assets";
 
+
 function SampleNextArrow(props) {
   const { onClick } = props;
   return (
