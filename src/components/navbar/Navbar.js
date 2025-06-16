@@ -6,6 +6,7 @@ import { FaFacebookF, FaTwitter, FaLinkedinIn, FaReact, FaInstagram, FaYoutube, 
 import { logo } from "../../assets/index"
 import { navLinksdata } from '../../constants';
 
+
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false)
   return (
