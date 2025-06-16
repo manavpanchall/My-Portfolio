@@ -3,6 +3,7 @@ import Title from '../layouts/Title';
 import { projectOne, projectTwo, projectThree, projectFour, projectFive, projectSix, UIOne, UITwo, UIThree, UIFour } from "../../assets/index";
 import ProjectsCard from './ProjectsCard';
 
+
 const Projects = () => {
   return (
     <>
@@ -16,7 +17,6 @@ const Projects = () => {
             des="My Projects"
           />
         </div>
-
         
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 xl:gap-14">
           <ProjectsCard
