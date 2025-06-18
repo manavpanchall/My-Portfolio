@@ -36,8 +36,8 @@ const Education = () => {
           />
         </div>
       </div>
-      {/* part Two */}
 
+      {/* part Two */}
       {/* <div>
         <div className="py-6 lgl:py-12 font-titleFont flex flex-col gap-4">
           <p className="text-sm text-designColor tracking-[4px]">2010 - 2022</p>
