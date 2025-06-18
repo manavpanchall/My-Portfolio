@@ -22,5 +22,4 @@ export const featuresData = [
     title: "Freelancing",
     des: "Providing high-quality, tailored solutions in web development and UI/UX design, delivering innovative projects that meet client needs efficiently.",
   },
-
 ];
