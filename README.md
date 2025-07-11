@@ -2,7 +2,6 @@
 
 Manav Panchal
 
-
 This project is a personal portfolio website for showcasing the work and skills of Manav Panchal. It is built using React.js and styled with Tailwind CSS.
 
 ## Table of Contents
