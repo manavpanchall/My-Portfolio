@@ -1,17 +1,26 @@
 import React from "react";
-import { FaFacebookF, FaTwitter, FaLinkedinIn, FaReact, FaInstagram, FaYoutube, FaGithub, FaBehance, } from "react-icons/fa";
-import { SiTailwindcss, SiFigma, SiNextdotjs } from "react-icons/si";
+import {
+  FaLinkedinIn,
+  FaTwitter,
+  FaInstagram,
+  FaYoutube,
+  FaGithub,
+  FaBehance,
+} from "react-icons/fa";
 
 const Media = () => {
   return (
-    <div className="flex flex-col xl:flex-row gap-6 lgl:gap-0 justify-between">
+    <div className="flex flex-col xl:flex-row gap-6 xl:gap-10 justify-between">
       <div>
-        <h2 className="text-base uppercase font-titleFont mb-4">Find me in</h2>
-        <div className="flex gap-4">
+        <h2 className="text-sm uppercase font-titleFont font-semibold mb-4 text-blackText dark:text-lightText tracking-wider transition-colors duration-300">
+          Find me in
+        </h2>
+        <div className="flex flex-wrap gap-3">
           <a
             href="https://www.linkedin.com/in/manavpanchall/"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="LinkedIn"
             className="bannerIcon"
           >
             <FaLinkedinIn />
@@ -20,6 +29,7 @@ const Media = () => {
             href="https://www.youtube.com/@manavpanchall"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="YouTube"
             className="bannerIcon"
           >
             <FaYoutube />
@@ -28,6 +38,7 @@ const Media = () => {
             href="https://www.instagram.com/manavpanchall/"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Instagram"
             className="bannerIcon"
           >
             <FaInstagram />
@@ -36,6 +47,7 @@ const Media = () => {
             href="https://x.com/manavpanchall"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Twitter"
             className="bannerIcon"
           >
             <FaTwitter />
@@ -43,14 +55,15 @@ const Media = () => {
         </div>
       </div>
       <div>
-        <h2 className="text-base uppercase font-titleFont mb-4">
-          BEST SKILL ON
+        <h2 className="text-sm uppercase font-titleFont font-semibold mb-4 text-blackText dark:text-lightText tracking-wider transition-colors duration-300">
+          Best skill on
         </h2>
-        <div className="flex gap-4">
-        <a
+        <div className="flex flex-wrap gap-3">
+          <a
             href="https://github.com/manavpanchall"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="GitHub"
             className="bannerIcon"
           >
             <FaGithub />
@@ -59,6 +72,7 @@ const Media = () => {
             href="https://www.behance.net/manavpanchal2"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Behance"
             className="bannerIcon"
           >
             <FaBehance />

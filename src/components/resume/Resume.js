@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
-import Title from '../layouts/Title';
-import Education from './Education';
-import Achievement from './Achievement';
+import React, { useState } from "react";
+import { motion } from "framer-motion";
+import Title from "../layouts/Title";
+import Education from "./Education";
+import Achievement from "./Achievement";
 import Experience from "./Experience";
 import resumePDF from "../../assets/Manav_Panchal_Personal.pdf";
 
@@ -11,72 +12,56 @@ const Resume = () => {
   const [achievementData, setAchievementData] = useState(false);
 
   return (
-    <section id="resume" className="w-full py-20 border-b-[1px] border-b-black">
+    <motion.section
+      id="resume"
+      initial={{ opacity: 0, y: 40 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.1 }}
+      transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+      className="w-full py-12 sm:py-16 md:py-20 border-b border-slate-200 dark:border-darkBorder transition-colors duration-300"
+    >
       <div className="flex flex-col justify-center items-center text-center">
         <Title title="2+ YEARS OF EXPERIENCE" des="My Resume" />
         <a
           href={resumePDF}
           download="Manav_Panchal_Resume.pdf"
-          className="mt-4 px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition duration-300"
+          className="mt-2 sm:mt-4 px-5 sm:px-6 py-2.5 sm:py-3 bg-blueAccent dark:bg-designColor text-white text-sm sm:text-base font-semibold rounded-xl hover:bg-redAccent dark:hover:bg-darkRed transition-all duration-300 shadow-md dark:shadow-xl hover:-translate-y-1"
         >
           Download Resume
         </a>
       </div>
-      <div className="mt-10 flex justify-center">
-        <ul className="w-full max-w-4xl grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
-          <li
-            onClick={() =>
-              setEducationData(true) &
-              setExperienceData(false) &
-              setAchievementData(false)
-            }
-            className={`${
-              educationData
-                ? "border-designColor rounded-lg"
-                : "border-transparent"
-            } resumeLi text-center`}
-          >
-            Education
-          </li>
-          <li
-            onClick={() =>
-              setEducationData(false) &
-              setExperienceData(true) &
-              setAchievementData(false)
-            }
-            className={`${
-              experienceData
-                ? "border-designColor rounded-lg"
-                : "border-transparent"
-            } resumeLi text-center`}
-          >
-            Experience
-          </li>
-          <li
-            onClick={() =>
-              setEducationData(false) &
-              setExperienceData(false) &
-              setAchievementData(true)
-            }
-            className={`${
-              achievementData
-                ? "border-designColor rounded-lg"
-                : "border-transparent"
-            } resumeLi text-center`}
-          >
-            Achievements
-          </li>
+
+      <div className="mt-8 sm:mt-10 flex justify-center">
+        <ul className="w-full max-w-3xl grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4">
+          {[
+            { label: "Education", active: educationData, onClick: () => { setEducationData(true); setExperienceData(false); setAchievementData(false); } },
+            { label: "Experience", active: experienceData, onClick: () => { setEducationData(false); setExperienceData(true); setAchievementData(false); } },
+            { label: "Achievements", active: achievementData, onClick: () => { setEducationData(false); setExperienceData(false); setAchievementData(true); } },
+          ].map((tab) => (
+            <li
+              key={tab.label}
+              onClick={tab.onClick}
+              className={`${
+                tab.active
+                  ? "border-blueAccent dark:border-designColor text-blueAccent dark:text-designColor"
+                  : ""
+              } resumeLi text-center text-base sm:text-lg`}
+            >
+              {tab.label}
+            </li>
+          ))}
         </ul>
       </div>
-      <div className="flex justify-center mt-10">
-        <div className="w-full max-w-4xl">
+
+      <div className="flex justify-center mt-8 sm:mt-10">
+        <div className="w-full max-w-3xl">
           {educationData && <Education />}
           {achievementData && <Achievement />}
           {experienceData && <Experience />}
         </div>
       </div>
-    </section>
+    </motion.section>
   );
-}
+};
 
 export default Resume;

@@ -1,18 +1,21 @@
-import React from 'react'
-import LeftBanner from './LeftBanner';
-import RightBanner from './RightBanner';
-
+import React from "react";
+import { motion } from "framer-motion";
+import LeftBanner from "./LeftBanner";
+import RightBanner from "./RightBanner";
 
 const Banner = () => {
   return (
-    <section
+    <motion.section
       id="home"
-      className="w-full pt-0 pb-5 flex flex-col gap-10 xl:gap-0 lgl:flex-row items-center border-b-[1px] font-titleFont border-b-black"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.5 }}
+      className="w-full pt-6 sm:pt-10 pb-12 sm:pb-16 flex flex-col gap-10 lg:gap-14 lgl:flex-row lgl:items-center lgl:gap-8 border-b border-slate-200 dark:border-darkBorder font-titleFont transition-colors duration-300"
     >
       <LeftBanner />
-     <RightBanner />
-    </section>
+      <RightBanner />
+    </motion.section>
   );
-}
+};
 
-export default Banner
+export default Banner;

@@ -1,28 +1,42 @@
-import React from 'react'
-import { FaFacebookF, FaTwitter, FaLinkedinIn, FaReact, FaInstagram, FaYoutube, FaGithub, FaBehance } from 'react-icons/fa';
+import React from "react";
+import {
+  FaTwitter,
+  FaLinkedinIn,
+  FaInstagram,
+  FaYoutube,
+} from "react-icons/fa";
 import { contactImg } from "../../assets/index";
 
 const ContactLeft = () => {
   return (
-    <div className="w-full lgl:w-[35%] h-full bg-gradient-to-r from-[#1e2024] to-[#23272b] p-4 lgl:p-8 rounded-lg shadow-shadowOne flex flex-col gap-8 justify-center">
+    <div className="w-full lgl:w-[35%] h-full bg-gradient-to-br from-white to-blue-50 dark:from-darkCard dark:to-darkCardAlt border border-lightBorder dark:border-darkBorder p-4 lgl:p-6 rounded-2xl shadow-md dark:shadow-xl flex flex-col gap-6 justify-center transition-colors duration-300">
       <img
-        className="w-full h-64 object-cover rounded-lg mb-2"
+        className="w-full h-56 md:h-64 object-cover rounded-xl mb-2 border border-lightBorder dark:border-darkBorder"
         src={contactImg}
         alt="contactImg"
       />
       <div className="flex flex-col gap-4">
-        <h3 className="text-3xl font-bold text-white">Manav Panchal</h3>
-        <p className="text-base text-gray-400 tracking-wide">
-          Results-driven Computer Science Engineer specializing in Web Development, UI/UX Design, and Software Engineering. Proficient in front-end and back-end development with expertise in React.js, JavaScript, C++, Python, SQL, and Agile methodologies. Designed and deployed multiple dynamic web applications, leveraging APIs and modern frameworks. Passionate about solving real-world challenges through efficient coding, responsive design, and optimized database solutions. Proven ability to collaborate in teams, enhance user experience, and drive innovative projects.
+        <h3 className="text-2xl md:text-3xl font-bold text-blackText dark:text-lightText transition-colors duration-300">
+          Manav Panchal
+          <span className="text-redAccent dark:text-darkRed">.</span>
+        </h3>
+        <p className="text-sm md:text-base text-grayText dark:text-mutedText tracking-wide leading-relaxed transition-colors duration-300">
+          Results-driven Computer Science Engineer specializing in Web
+          Development, UI/UX Design, and Software Engineering. Proficient in
+          front-end and back-end development with expertise in React.js,
+          JavaScript, C++, Python, SQL, and Agile methodologies.
         </p>
       </div>
       <div className="flex flex-col gap-4">
-        <h2 className="text-base uppercase font-titleFont mb-4">Find me in</h2>
-        <div className="flex gap-4">
+        <h2 className="text-sm uppercase font-titleFont font-semibold text-blackText dark:text-lightText tracking-wider transition-colors duration-300">
+          Find me in
+        </h2>
+        <div className="flex flex-wrap gap-3">
           <a
             href="https://www.linkedin.com/in/manavpanchall/"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="LinkedIn"
             className="bannerIcon"
           >
             <FaLinkedinIn />
@@ -31,6 +45,7 @@ const ContactLeft = () => {
             href="https://www.youtube.com/@manavpanchall"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="YouTube"
             className="bannerIcon"
           >
             <FaYoutube />
@@ -39,6 +54,7 @@ const ContactLeft = () => {
             href="https://www.instagram.com/manavpanchall/"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Instagram"
             className="bannerIcon"
           >
             <FaInstagram />
@@ -47,6 +63,7 @@ const ContactLeft = () => {
             href="https://x.com/manavpanchall"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Twitter"
             className="bannerIcon"
           >
             <FaTwitter />
@@ -55,6 +72,6 @@ const ContactLeft = () => {
       </div>
     </div>
   );
-}
+};
 
-export default ContactLeft
+export default ContactLeft;

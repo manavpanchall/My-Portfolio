@@ -1,143 +1,50 @@
-import React, { useState } from 'react'
+import React from "react";
 import { Link } from "react-scroll";
-import { FiMenu } from "react-icons/fi";
-import { MdClose } from "react-icons/md";
-import { FaFacebookF, FaTwitter, FaLinkedinIn, FaReact, FaInstagram, FaYoutube, FaGithub, FaBehance, } from "react-icons/fa";
-import { logo } from "../../assets/index"
-import { navLinksdata } from '../../constants';
-
+import { navLinksdata } from "../../constants";
+import ThemeToggle from "../ThemeToggle/ThemeToggle";
 
 const Navbar = () => {
-  const [showMenu, setShowMenu] = useState(false)
   return (
-    <div className="w-full h-24 sticky top-0 z-50 bg-bodyColor mx-auto flex justify-between items-center font-titleFont border-b-[1px] border-b-gray-600">
-      <div>
+    <header className="w-full h-16 sm:h-20 sticky top-0 z-40 backdrop-blur-xl bg-lightBody/70 dark:bg-bodyColor/70 border-b border-slate-200/60 dark:border-darkBorder/60 transition-colors duration-300">
+      <div className="max-w-screen-xl mx-auto h-full px-4 sm:px-6 lg:px-8 flex justify-between items-center">
         <Link
           to="home"
           spy={true}
           smooth={true}
           offset={-70}
           duration={500}
-          className="text-white text-2xl font-bold cursor-pointer"
+          className="text-blackText dark:text-lightText text-xl sm:text-2xl font-bold cursor-pointer transition-colors duration-300 hover:text-blueAccent dark:hover:text-designColor font-titleFont"
         >
           manavpanchall
+          <span className="text-redAccent dark:text-darkRed">.</span>
         </Link>
-      </div>
-      <div>
-        <ul className="hidden mdl:inline-flex items-center gap-6 lg:gap-10">
-          {navLinksdata.map(({ _id, title, link }) => (
-            <li
-              className="text-base font-normal text-gray-400 tracking-wide cursor-pointer hover:text-designColor duration-300"
-              key={_id}
-            >
-              <Link
-                activeClass="active"
-                to={link}
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
+
+        <div className="flex items-center gap-3 sm:gap-5">
+          <ul className="hidden lgl:inline-flex items-center gap-6 lg:gap-8">
+            {navLinksdata.map(({ _id, title, link }) => (
+              <li
+                key={_id}
+                className="text-sm lg:text-base font-medium text-grayText dark:text-mutedText tracking-wide cursor-pointer hover:text-blackText dark:hover:text-lightText duration-300 transition-colors"
               >
-                {title}
-              </Link>
-            </li>
-          ))}
-        </ul>
-        <span
-          onClick={() => setShowMenu(!showMenu)}
-          className="text-xl mdl:hidden bg-black w-10 h-10 inline-flex items-center justify-center rounded-full text-designColor cursor-pointer"
-        >
-          <FiMenu />
-        </span>
-        {showMenu && (
-          <div className="w-[80%] h-screen overflow-scroll absolute top-0 left-0 bg-gray-900 p-4 scrollbar-hide">
-            <div className="flex flex-col gap-8 py-2 relative">
-              <div>
                 <Link
-                  to="home"
+                  activeClass="active"
+                  to={link}
                   spy={true}
                   smooth={true}
                   offset={-70}
                   duration={500}
-                  className="text-white text-2xl font-bold cursor-pointer"
                 >
-                  manavpanchall
+                  {title}
                 </Link>
-                <p className="text-sm text-gray-400 mt-2">
-                  "Building Seamless Digital Experiences with Code & Creativity" 🚀
-                </p>
-              </div>
-              <ul className="flex flex-col gap-4">
-                {navLinksdata.map((item) => (
-                  <li
-                    key={item._id}
-                    className="text-base font-normal text-gray-400 tracking-wide cursor-pointer hover:text-designColor duration-300"
-                  >
-                    <Link
-                      onClick={() => setShowMenu(false)}
-                      activeClass="active"
-                      to={item.link}
-                      spy={true}
-                      smooth={true}
-                      offset={-70}
-                      duration={500}
-                    >
-                      {item.title}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-              <div className="flex flex-col gap-4">
-                <h2 className="text-base uppercase font-titleFont mb-4">
-                  Find me in
-                </h2>
-                <div className="flex gap-4">
-                  <a
-                    href="https://www.youtube.com/@manavpanchall"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="bannerIcon"
-                  >
-                    <FaLinkedinIn />
-                  </a>
-                  <a
-                    href="https://www.linkedin.com/in/manavpanchall/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="bannerIcon"
-                  >
-                    <FaYoutube />
-                  </a>
-                  <a
-                    href="https://www.instagram.com/manavpanchall/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="bannerIcon"
-                  >
-                    <FaInstagram />
-                  </a>
-                  <a
-                    href="https://x.com/manavpanchall"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="bannerIcon"
-                  >
-                    <FaTwitter />
-                  </a>
-                </div>
-              </div>
-              <span
-                onClick={() => setShowMenu(false)}
-                className="absolute top-4 right-4 text-gray-400 hover:text-designColor duration-300 text-2xl cursor-pointer"
-              >
-                <MdClose />
-              </span>
-            </div>
-          </div>
-        )}
-      </div>
-    </div>
-  );
-}
+              </li>
+            ))}
+          </ul>
 
-export default Navbar
+          <ThemeToggle />
+        </div>
+      </div>
+    </header>
+  );
+};
+
+export default Navbar;

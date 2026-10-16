@@ -3,27 +3,141 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components{
-    .bannerIcon{
-        @apply w-16 h-16 bg-black bg-opacity-25 text-gray-200 text-xl inline-flex items-center justify-center rounded-md shadow-shadowOne hover:bg-opacity-40 hover:-translate-y-1 transition-all hover:text-designColor cursor-pointer duration-300;
-    }
-    .resumeLi {
-    @apply w-full h-20 bg-black bg-opacity-25 text-xl text-gray-300 flex justify-center cursor-pointer hover:bg-opacity-40 duration-300 items-center border-[1px] rounded-none;
-         }
-.bgOpacity {
-@apply bg-black bg-opacity-40;
-                  }
-    .contactInput{
-        @apply w-full h-12 rounded-lg border-b-[1px] border-b-gray-600 bg-[#191b1e] text-lightText px-4 active:outline-none focus-visible:outline-designColor outline-none focus-visible:border-b-transparent duration-300
-    }
-.contactTextArea{
-    @apply w-full rounded-lg border-b-[1px] border-b-gray-600 bg-[#191b1e] text-lightText px-4 py-2 active:outline-none focus-visible:outline-designColor outline-none focus-visible:border-b-transparent duration-300 resize-none
-}
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply transition-colors duration-300;
+  }
+
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    @apply bg-slate-100 dark:bg-bodyColor;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-blue-400 dark:bg-designColor rounded-full;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-blue-600 dark:bg-blue-500;
+  }
 }
 
-.active {
-    color: white;
+@layer components {
+  /* ==================== SOCIAL ICON BUTTONS ==================== */
+  .bannerIcon {
+    @apply w-11 h-11 sm:w-12 sm:h-12 md:w-14 md:h-14 text-base sm:text-lg md:text-xl inline-flex items-center justify-center rounded-xl transition-all cursor-pointer duration-300;
+    @apply bg-white text-blackText border border-lightBorder shadow-md;
+    @apply hover:bg-blueAccent hover:text-white hover:border-blueAccent hover:-translate-y-1 hover:shadow-xl;
+    @apply dark:bg-darkCard dark:text-lightText dark:border dark:border-darkBorder;
+    @apply dark:hover:bg-designColor dark:hover:text-white dark:hover:border-designColor dark:hover:-translate-y-1;
+  }
+
+  /* ==================== RESUME TAB BUTTONS ==================== */
+  .resumeLi {
+    @apply w-full h-14 sm:h-16 text-sm sm:text-base flex justify-center cursor-pointer duration-300 items-center border rounded-xl font-medium;
+    @apply bg-white text-grayText border-lightBorder hover:border-blueAccent hover:text-blueAccent;
+    @apply dark:bg-darkCard dark:text-mutedText dark:border-darkBorder dark:hover:border-designColor dark:hover:text-designColor;
+  }
+
+  /* ==================== PROGRESS BAR TRACK ==================== */
+  .bgOpacity {
+    @apply bg-blue-100 dark:bg-darkBorder;
+  }
+
+  /* ==================== FORM INPUTS ==================== */
+  .contactInput {
+    @apply w-full h-11 sm:h-12 rounded-lg border px-3 sm:px-4 text-sm sm:text-base outline-none duration-300;
+    @apply bg-white text-blackText border-lightBorder;
+    @apply focus:border-blueAccent focus:ring-2 focus:ring-blue-100;
+    @apply dark:bg-darkCard dark:text-lightText dark:border-darkBorder;
+    @apply dark:focus:border-designColor dark:focus:ring-2 dark:focus:ring-blue-900/40;
+  }
+
+  .contactTextArea {
+    @apply w-full rounded-lg border px-3 sm:px-4 py-2 text-sm sm:text-base outline-none duration-300 resize-none;
+    @apply bg-white text-blackText border-lightBorder;
+    @apply focus:border-blueAccent focus:ring-2 focus:ring-blue-100;
+    @apply dark:bg-darkCard dark:text-lightText dark:border-darkBorder;
+    @apply dark:focus:border-designColor dark:focus:ring-2 dark:focus:ring-blue-900/40;
+  }
 }
-.scrollbar-hide::-webkit-scrollbar{
-    display: none;
+
+/* ==================== LINE CLAMP ==================== */
+.line-clamp-4 {
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* ==================== SMOOTH SCROLL ==================== */
+section {
+  scroll-margin-top: 80px;
+}
+
+/* ==================== TOUCH TARGETS ==================== */
+@media (max-width: 1024px) {
+  button,
+  a {
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+@supports (-webkit-overflow-scrolling: touch) {
+  html {
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
+/* ==================== ACTIVE NAV LINK ==================== */
+.active {
+  @apply text-blueAccent dark:text-designColor font-semibold;
+  position: relative;
+}
+
+.active::after {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  @apply bg-redAccent dark:bg-darkRed;
+  border-radius: 2px;
+}
+
+/* ==================== SCROLLBAR HIDE ==================== */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* ==================== THEME TRANSITION ==================== */
+* {
+  transition-property: background-color, border-color, color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+}
+
+.no-transition * {
+  transition: none !important;
+}
+
+/* ==================== TEXT SELECTION ==================== */
+::selection {
+  @apply bg-blue-500 text-white;
+}
+
+.dark ::selection {
+  @apply bg-designColor text-white;
+}
+
+/* ==================== PREVENT HORIZONTAL SCROLL ==================== */
+html,
+body {
+  overflow-x: hidden;
+  max-width: 100vw;
 }
