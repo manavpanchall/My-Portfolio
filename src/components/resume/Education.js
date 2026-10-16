@@ -29,13 +29,13 @@ const Education = () => {
             title="Science - PCM"
             subTitle="New Look Sr Sec School Lodha Banswara Raj"
             result="2021"
-            des="Studied Physics, Chemistry, and Mathematics, laying a strong foundation for engineering studies. Participated in various science fairs and competitions, demonstrating a keen interest in scientific exploration and innovation."
+            des=""
           />
           <ResumeCard
             title="Secondary School Education"
             subTitle="New Look Sr Sec School Lodha Banswara Raj"
             result="2019"
-            des="Completed secondary education with a focus on core subjects, achieving excellent grades. Actively participated in extracurricular activities, including sports and cultural events, fostering well-rounded development."
+            des=""
           />
         </div>
       </div>
