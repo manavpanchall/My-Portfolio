@@ -7,53 +7,42 @@ const Experience = () => {
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1, transition: { duration: 0.5 } }}
-      className="py-12 font-titleFont flex flex-col lgl:flex-row gap-10 lgl:gap-20"
+      className="py-3 sm:py-6 font-titleFont flex flex-col lgl:flex-row gap-6 lgl:gap-20"
     >
-      <div className="w-full lgl:w-1/2">
-        <div className="flex flex-col gap-4">
-          <p className="text-sm text-redAccent dark:text-darkRed tracking-[4px] font-semibold transition-colors duration-300">
-            2026
+      <div className="w-full lgl:w-1/2 min-w-0">
+        <div className="flex flex-col gap-1.5 sm:gap-3">
+          <p className="text-[10px] sm:text-xs md:text-sm text-redAccent dark:text-darkRed tracking-[3px] font-semibold transition-colors duration-300">
+            2023
           </p>
-          <h2 className="text-3xl md:text-4xl font-bold text-blackText dark:text-lightText transition-colors duration-300">
+          <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-blackText dark:text-lightText transition-colors duration-300">
             Job Experience
           </h2>
         </div>
-        <div className="mt-6 w-full border-l-[3px] border-l-blue-200 dark:border-l-darkBorder flex flex-col gap-10 transition-colors duration-300">
+        <div className="mt-3 sm:mt-6 w-full border-l-[3px] border-l-blue-200 dark:border-l-darkBorder flex flex-col gap-4 sm:gap-6 transition-colors duration-300">
           <ResumeCard
-            title="Project Manager"
-            subTitle="Solar Mitra ( Jan, 2026 – Present)"
-            result="Ahmedabad, Gujarat, India"
-            des=""
-          />
-          <ResumeCard
-            title="Full Stack Developer Intern"
-            subTitle="Unified Mentor Private Limited ( Dec, 2024 – Apr, 2025)"
-            result="Gurugram, Haryana, India · Remote"
-            des=""
-          />
-          <ResumeCard
-            title="Web Development and Designing Intern"
+            title="(Internship) Web Development and Designing"
             subTitle="OASIS INFOBYTE (01 Apr, 2023 – 10 May, 2023)"
             result="Remote"
-            des=""
+            des="Interned at Oasis Infobyte for Web Development and Designing, gaining hands-on experience and deepening understanding of concepts for future projects."
           />
         </div>
       </div>
-      <div className="w-full lgl:w-1/2">
-        <div className="flex flex-col gap-4">
-          <p className="text-sm text-redAccent dark:text-darkRed tracking-[4px] font-semibold transition-colors duration-300">
+
+      <div className="w-full lgl:w-1/2 min-w-0">
+        <div className="flex flex-col gap-1.5 sm:gap-3">
+          <p className="text-[10px] sm:text-xs md:text-sm text-redAccent dark:text-darkRed tracking-[3px] font-semibold transition-colors duration-300">
             2024
           </p>
-          <h2 className="text-3xl md:text-4xl font-bold text-blackText dark:text-lightText transition-colors duration-300">
+          <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-blackText dark:text-lightText transition-colors duration-300">
             Training Experience
           </h2>
         </div>
-        <div className="mt-6 w-full border-l-[3px] border-l-blue-200 dark:border-l-darkBorder flex flex-col gap-10 transition-colors duration-300">
+        <div className="mt-3 sm:mt-6 w-full border-l-[3px] border-l-blue-200 dark:border-l-darkBorder flex flex-col gap-4 sm:gap-6 transition-colors duration-300">
           <ResumeCard
             title="Summer Internship Training"
             subTitle="byteXL (07 May 2024 - 07 Jun 2024)"
             result="Onsite"
-            des="Successfully completed my internship with byteXL during May and June. This internship was an incredible opportunity to sharpen problem-solving skills, gain practical knowledge, and become placement-ready. A huge shout-out to my amazing mentors for their endless support, guidance, and encouragement throughout this journey."
+            des="Successfully completed my internship with byteXL during May and June. This internship was an incredible opportunity to sharpen problem-solving skills, gain practical knowledge, and become placement-ready."
           />
         </div>
       </div>

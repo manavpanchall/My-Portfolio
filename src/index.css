@@ -36,11 +36,13 @@
     @apply dark:hover:bg-designColor dark:hover:text-white dark:hover:border-designColor dark:hover:-translate-y-1;
   }
 
-  /* ==================== RESUME TAB BUTTONS ==================== */
+  /* ==================== RESUME TAB BUTTONS (tighter for mobile) ==================== */
   .resumeLi {
-    @apply w-full h-14 sm:h-16 text-sm sm:text-base flex justify-center cursor-pointer duration-300 items-center border rounded-xl font-medium;
+    @apply w-full h-11 sm:h-14 md:h-16 px-1 sm:px-2 flex justify-center cursor-pointer duration-300 items-center border rounded-lg sm:rounded-xl font-medium text-center;
     @apply bg-white text-grayText border-lightBorder hover:border-blueAccent hover:text-blueAccent;
     @apply dark:bg-darkCard dark:text-mutedText dark:border-darkBorder dark:hover:border-designColor dark:hover:text-designColor;
+    font-size: clamp(0.65rem, 2.4vw, 1rem);
+    line-height: 1.2;
   }
 
   /* ==================== PROGRESS BAR TRACK ==================== */

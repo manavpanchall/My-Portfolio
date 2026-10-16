@@ -16,7 +16,7 @@ function App() {
       <div className="w-full min-h-screen bg-lightBody dark:bg-bodyColor text-blackText dark:text-lightText transition-colors duration-300 relative overflow-x-hidden">
         <Navbar />
 
-        <main className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 pb-24 sm:pb-28 md:pb-32">
+        <main className="max-w-screen-xl mx-auto px-3 sm:px-5 md:px-6 lg:px-8 pb-24 sm:pb-28 md:pb-32">
           <Banner />
           <Workforce />
           <Projects />

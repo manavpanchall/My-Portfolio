@@ -20,13 +20,13 @@ const Projects = () => {
     <>
       <section
         id="projects"
-        className="w-full py-12 sm:py-16 md:py-20 border-b border-slate-200 dark:border-darkBorder transition-colors duration-300"
+        className="w-full py-10 sm:py-14 md:py-20 border-b border-slate-200 dark:border-darkBorder transition-colors duration-300"
       >
         <Reveal variant="fadeUp" className="flex justify-center text-center">
           <Title title="VISIT MY PORTFOLIO" des="My Projects" />
         </Reveal>
 
-        <div className="flex flex-col gap-5 sm:gap-6 md:gap-8">
+        <div className="flex flex-col gap-4 sm:gap-5 md:gap-6">
           <ProjectsCard
             index={0}
             title="Gas Agency Management System"
@@ -80,12 +80,12 @@ const Projects = () => {
 
       <section
         id="uiux-projects"
-        className="w-full py-12 sm:py-16 md:py-20 border-b border-slate-200 dark:border-darkBorder transition-colors duration-300"
+        className="w-full py-10 sm:py-14 md:py-20 border-b border-slate-200 dark:border-darkBorder transition-colors duration-300"
       >
         <Reveal variant="fadeUp" className="flex justify-center text-center">
           <Title title="VISIT MY UI/UX PORTFOLIO" des="My UI/UX Projects" />
         </Reveal>
-        <div className="flex flex-col gap-5 sm:gap-6 md:gap-8">
+        <div className="flex flex-col gap-4 sm:gap-5 md:gap-6">
           <ProjectsCard
             index={0}
             title="UX-UI Case study - Velocity Cars"
