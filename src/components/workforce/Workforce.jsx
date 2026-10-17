@@ -84,8 +84,7 @@ const Workforce = () => {
           className="mt-2 sm:mt-3 text-grayText dark:text-mutedText max-w-2xl"
           style={{ fontSize: "clamp(0.75rem, 2.6vw, 1.125rem)", lineHeight: "1.6" }}
         >
-          from manually connecting wires in prototype mode to creating full
-          fledged web apps by prompts :)
+          
         </p>
       </Reveal>
 
