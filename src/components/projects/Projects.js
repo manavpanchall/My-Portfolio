@@ -8,6 +8,7 @@ import {
   projectFour,
   projectFive,
   projectSix,
+  projectSeven,
   UIOne,
   UITwo,
   UIThree,
@@ -29,6 +30,14 @@ const Projects = () => {
         <div className="flex flex-col gap-4 sm:gap-5 md:gap-6">
           <ProjectsCard
             index={0}
+            title="Foodee."
+            des=""
+            src={projectSeven}
+            githubLink="https://github.com/manavpanchall/Foodee.app"
+            projectLink="https://foodee-pied.vercel.app/"
+          />
+          <ProjectsCard
+            index={1}
             title="Gas Agency Management System"
             des="Developed a web-based Gas Agency Management System using React.js to streamline operations such as customer management, order processing, inventory tracking, and billing. Features a user-friendly interface for administrators and customers, real-time order placement, delivery scheduling, automated invoice generation, and stock monitoring."
             src={projectSix}
@@ -36,7 +45,7 @@ const Projects = () => {
             projectLink="https://github.com/manavpanchall/Gas-Agency-System-host"
           />
           <ProjectsCard
-            index={1}
+            index={2}
             title="Weather App"
             des="Built a real-time weather forecasting web app using React.js, Axios, and OpenWeatherMap API with a fully responsive UI. Optimized API calls reducing fetch time by 35%, and used React hooks for better component reusability."
             src={projectOne}
@@ -44,7 +53,7 @@ const Projects = () => {
             projectLink="https://weather-app-india.vercel.app/"
           />
           <ProjectsCard
-            index={2}
+            index={3}
             title="Behance-Clone"
             des="Fully functional Behance-style portfolio platform with React.js, Tailwind CSS and React Icons. Includes dynamic search & filtering, animated UI, and improved navigation experience by 40%."
             src={projectTwo}
@@ -52,7 +61,7 @@ const Projects = () => {
             projectLink="https://behance-clone-gamma.vercel.app/"
           />
           <ProjectsCard
-            index={3}
+            index={4}
             title="Car-Rental"
             des="React-based car rental platform with smooth animations and dark mode. Uses reusable hooks and components, making UI management 30% more efficient."
             src={projectThree}
@@ -60,7 +69,7 @@ const Projects = () => {
             projectLink="https://car-rental-green.vercel.app/"
           />
           <ProjectsCard
-            index={4}
+            index={5}
             title="Automation of Database Optimization"
             des="Database dashboard app using React with FullCalendar, Nivo, Chart.js and Material-UI. Uses Redux Toolkit for state management and Formik + Yup for validation."
             src={projectFour}
@@ -68,7 +77,7 @@ const Projects = () => {
             projectLink="https://frontend-pu-code-hackathon.vercel.app/"
           />
           <ProjectsCard
-            index={5}
+            index={7}
             title="Secure-Drive"
             des="Secure Drive is a React-based cloud storage app for securely managing files and folders. Integrates Firebase for auth and database, Cloudinary for uploads, with responsive design across devices."
             src={projectFive}
