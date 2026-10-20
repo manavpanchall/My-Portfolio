@@ -23,17 +23,17 @@ const Education = () => {
             title="Bachelor of Technology in Computer Science and Engineering with Specialization in Artificial Intelligence"
             subTitle="Parul University, Vadodara, Gujarat (2021 - 2025)"
             result="2025"
-            des="Completed a comprehensive curriculum focused on Artificial Intelligence, including courses on machine learning, neural networks, and data science. Engaged in hands-on projects and research, achieving a CGPA of 7.16 out of 10."
+            des="" CGPA of 7.23 / 10."
           />
           <ResumeCard
             title="Science - PCM"
-            subTitle="New Look Sr Sec School Lodha Banswara Raj"
+            subTitle="New Look Sr. Sec. School"
             result="2021"
             des=""
           />
           <ResumeCard
             title="Secondary School Education"
-            subTitle="New Look Sr Sec School Lodha Banswara Raj"
+            subTitle="New Look Sr. Sec. School"
             result="2019"
             des=""
           />

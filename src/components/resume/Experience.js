@@ -20,10 +20,22 @@ const Experience = () => {
         </div>
         <div className="mt-3 sm:mt-6 w-full border-l-[3px] border-l-blue-200 dark:border-l-darkBorder flex flex-col gap-4 sm:gap-6 transition-colors duration-300">
           <ResumeCard
+            title="Project Manager"
+            subTitle="Solar Mitra ( Jan, 2026 – Present)"
+            result="Ahmedabad, Gujarat, India "
+            des=""
+          />
+          <ResumeCard
+            title="Full-Stack Developer Intern"
+            subTitle="Unified Mentors Pvt. Ltd. (15 Dec, 2024 – 15 Apr, 2025)"
+            result="Remote"
+            des=""
+          />
+          <ResumeCard
             title="(Internship) Web Development and Designing"
             subTitle="OASIS INFOBYTE (01 Apr, 2023 – 10 May, 2023)"
             result="Remote"
-            des="Interned at Oasis Infobyte for Web Development and Designing, gaining hands-on experience and deepening understanding of concepts for future projects."
+            des=""
           />
         </div>
       </div>
