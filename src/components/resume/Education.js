@@ -23,7 +23,7 @@ const Education = () => {
             title="Bachelor of Technology in Computer Science and Engineering with Specialization in Artificial Intelligence"
             subTitle="Parul University, Vadodara, Gujarat (2021 - 2025)"
             result="2025"
-            des="" CGPA of 7.23 / 10."
+            des=" CGPA - 7.23 / 10."
           />
           <ResumeCard
             title="Science - PCM"
