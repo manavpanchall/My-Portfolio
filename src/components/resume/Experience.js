@@ -12,7 +12,7 @@ const Experience = () => {
       <div className="w-full lgl:w-1/2 min-w-0">
         <div className="flex flex-col gap-1.5 sm:gap-3">
           <p className="text-[10px] sm:text-xs md:text-sm text-redAccent dark:text-darkRed tracking-[3px] font-semibold transition-colors duration-300">
-            2023
+            2023 - Present
           </p>
           <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-blackText dark:text-lightText transition-colors duration-300">
             Job Experience
