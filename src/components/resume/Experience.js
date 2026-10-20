@@ -22,7 +22,7 @@ const Experience = () => {
           <ResumeCard
             title="Project Manager"
             subTitle="Solar Mitra ( Jan, 2026 – Present)"
-            result="Ahmedabad, Gujarat, India "
+            result="Ahmedabad"
             des=""
           />
           <ResumeCard
